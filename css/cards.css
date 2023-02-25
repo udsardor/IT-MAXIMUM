@@ -1,0 +1,246 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+a {
+  color: #fff;
+  z-index: -1;
+}
+
+.wrapper-container {
+  max-width: 100%;
+  margin-top: 0px;
+}
+
+.container-card {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  overflow-x: hidden;
+  z-index: -5;
+}
+
+.cardcha {
+  overflow: hidden;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 150px;
+  position: relative;
+  z-index: 1;
+}
+
+.textcha {
+  text-align: center;
+}
+
+.textcha span {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.textcha p {
+  display: none;
+}
+
+
+
+.cardcha:hover p {
+  display: block;
+}
+
+
+
+.cardcha img {
+  filter: brightness(35%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+  transition: all 2s;
+}
+
+.cardcha:hover img {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.recomended-course .recomended-course_background {
+  width: 100%;
+  height: 100px;
+  background: #151515;
+  line-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recomended-course .recomended-course_button button {
+  margin-top: 40px;
+  width: 300px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 1px;
+  background: none;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: all 0.7 linear;
+}
+
+.recomended-course_button button:hover {
+  background: #fff;
+  color: #151515;
+  transition: all 0.3s linear;
+
+}
+
+.recomended-course_button button:active {
+  transform: scale(0.77);
+}
+
+@media screen and (max-width: 1319px) {
+  .container-card {
+    flex-wrap: wrap;
+  }
+
+  .cardcha {
+    height: 230px;
+    flex: 0 1 33.333%;
+  }
+
+  .cardcha img {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1167px) {
+  .container-card {
+    flex-wrap: wrap;
+  }
+
+  .cardcha {
+    height: 250px;
+    flex: 0 1 50%;
+  }
+
+  .cardcha picture {
+    height: 250px;
+  }
+
+  .cardcha picture img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  .wrapper-nav,
+  .navigation {
+    max-width: 100%;
+  }
+
+  .wrapper-container {
+    width: 100%;
+  }
+
+  .container-card {
+    flex-wrap: wrap;
+  }
+
+  .cardcha {
+    height: 300px;
+    width: 100%;
+    flex: 0 1 100%;
+  }
+
+  .cardcha img {
+    height: 100%;
+  }
+
+  .cardcha picture img {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    width: 100%;
+  }
+
+  .wrapper-nav,
+  .navigation {
+    margin: 0 0 -50px;
+    max-width: 100%;
+  }
+
+  .wrapper-container {
+    width: 100%;
+  }
+
+  .container-card {
+    flex-wrap: wrap;
+  }
+
+  .cardcha {
+    height: 200px;
+    width: 100%;
+    flex: 0 1 100%;
+  }
+
+  .cardcha img {
+    height: 100%;
+  }
+
+  .cardcha picture img {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  body {
+    width: 100%;
+  }
+
+  .wrapper-nav,
+  .navigation {
+    max-width: 100%;
+  }
+
+  .wrapper-container {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .container-card {
+    flex-wrap: wrap;
+  }
+
+  .cardcha {
+    height: 200px;
+    width: 100%;
+    flex: 0 1 100%;
+  }
+
+  .cardcha img {
+    height: 100%;
+  }
+
+  .cardcha picture img {
+    height: 100%;
+  }
+}

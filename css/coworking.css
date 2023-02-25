@@ -1,0 +1,198 @@
+.coworking {
+    width: 100%;
+    height: 50vh;
+    margin-top: 500px;
+    position: relative;
+}
+
+.coworking-container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.coworking img {
+    filter: brightness(35%);
+    width: 100%;
+    height: 410px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    transition: all 2s;
+
+}
+
+.coworking .title {
+    position: absolute;
+    color: #fff;
+    width: 700px;
+}
+
+.coworking .title h1 {
+    width: 100%;
+    line-height: 300px;
+    font-size: 35px;
+    padding-left: 60px;
+    margin-top: -50px;
+}
+
+.coworking .title span {
+    top: 100px;
+    width: 50px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    object-fit: cover;
+    transition: all 2s;
+}
+
+.coworking p {
+    font-size: 1.3rem;
+    margin-left: 60px;
+}
+
+.coworking .all-texts {
+    margin-top: -110px;
+}
+
+.coworking button {
+    width: 300px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    border-radius: 1px;
+    background: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.7 linear;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.coworking button:hover {
+    background: #fff;
+    color: #151515;
+    transition: all 0.3s linear;
+}
+
+.coworking button:active {
+    transform: scale(0.77);
+}
+
+@media screen and (max-width: 1167px) {
+    .coworking-container {
+        width: 100%;
+    }
+
+    .coworking_img img {
+        height: 300px;
+    }
+
+    .coworking .title {
+        width: 100%;
+        height: 100%;
+        margin-top: -40px;
+        padding: 0 10px;
+    }
+
+    .coworking .title h1 {
+        line-height: 300px;
+        margin-top: -47px;
+        font-size: 30px;
+        /* margin-left: -60px; */
+    }
+
+    .coworking .title .all-texts {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .coworking .title span {
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .coworking {
+        margin-top: 50px;
+        position: relative;
+    }
+
+    .coworking .title h1 {
+        line-height: 250px;
+        margin-top: -23px;
+        font-size: 24px;
+    }
+
+    .coworking p {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .coworking {
+        width: 100%;
+        height: 50vh;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .coworking-container {
+        text-align: center;
+    }
+
+    .coworking .title .all-texts {
+        width: 100%;
+    }
+
+    .coworking .title h1,
+    .coworking .title p,
+    .coworking button {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .coworking .title h1 {
+        line-height: 200px;
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .coworking p {
+        margin-top: 50px;
+        font-size: 16px;
+    }
+
+    .coworking .all-texts button {
+        width: 170px;
+        height: 33px;
+        font-size: 13px;
+    }
+
+    .coworking .title span {
+        display: none;
+    }
+
+    .recomended-course .recomended-course_button button {
+        width: 200px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 466px) {
+    .coworking p {
+        margin-top: 35px;
+        font-size: 14px;
+    }
+
+    .coworking .title h1 {
+        font-size: 20px;
+    }
+
+}
