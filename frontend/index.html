@@ -31,6 +31,47 @@
 </head>
 
 <body>
+
+  <!-- Hidden modal -->
+  <div class="modal">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <form id="form" method="POST">
+          <div data-close class="modal__close">&times;</div>
+          <div class="modal__title">
+            Biz bilan malumotlaringizni ulashing va siz bilan tez orada bo'g'lanamiz
+          </div>
+          <input
+            required
+            placeholder="Ism va familiya ..."
+            name="fname"
+            id="fname"
+            type="text"
+            class="modal__input"
+          />
+          <input
+            required
+            placeholder="email kiriting"
+            name="email"
+            id="emailMe"
+            type="email"
+            class="modal__input"
+          />
+          <input
+            required
+            placeholder="telefon nomer ..."
+            name="phone"
+            id="phoneMe"
+            type="phone"
+            class="modal__input"
+          />
+          <button id="sendMailBtn" class="button phone modal_btn">YUBORISH</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- /Hidden modal -->
+
   <!-- Navbar -->
   <div class="wrapper-nav">
     <nav class="navigation">
@@ -156,7 +197,7 @@
       </button>
     </div>
     <video style="filter: brightness(25%);" autoplay muted loop plays-inline>
-      <source src="/videos/header-video.mp4">
+      <source src="videos/header-video.mp4">
     </video>
     <img class="imghere" src="/images/header.jpg" alt="">
   </div>
@@ -512,8 +553,8 @@
   <!-- /FOOTER -->
 
   <!-- JS Links -->
-  <script src="./js/form.js"></script>
-  <script src="./js/main.js"></script>
-  <script src="./js/lang.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/lang.js"></script>
 </body>
 </html>

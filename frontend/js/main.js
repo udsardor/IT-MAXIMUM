@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const btn = document.querySelector("[data-modal]"),
+  const btn = document.querySelector(".button-header"),
     forms = document.querySelectorAll("form"),
     modal = document.querySelector(".modal"),
     closerBtn = document.querySelector("[data-close]"); 
